@@ -2,6 +2,8 @@
 
 A fast-paced, 2-player local arcade Pong game built from scratch in C using the **Raylib** game engine framework. Control your paddles, deflect the ball with dynamic spin physics, score points, and be the first to reach 5 points to claim victory!
 
+> ⚠️ **Important Note:** This game is strictly designed for **Local 2-Player** gameplay (Player 1 vs Player 2). Single-player mode against an AI opponent is currently **not supported**.
+
 ---
 
 ## 📸 Screenshots
@@ -14,9 +16,9 @@ A fast-paced, 2-player local arcade Pong game built from scratch in C using the 
 
 ## ✨ Features
 
-- **2-Player Local Gameplay:** Face off locally with independent paddle controls for Player 1 (Green) and Player 2 (Red).
-- **Dynamic Angle Physics:** Ball speed and vertical trajectory change based on collision location on the paddle.
-- **Score System & Win Condition:** Live score tracking with dynamic winner detection at 5 points.
+- **2-Player Local Only:** Face off on the same keyboard with independent controls for Player 1 (Green) and Player 2 (Red).
+- **Dynamic Angle Physics:** Ball speed and vertical trajectory change dynamically based on where it impacts the paddle.
+- **Score System & Win Condition:** Live score tracking with dynamic winner detection when a player reaches 5 points.
 - **Display Options:** One-key fullscreen toggle (`Z`) and instant match restart (`R`).
 
 ---
@@ -38,7 +40,7 @@ A fast-paced, 2-player local arcade Pong game built from scratch in C using the 
 
 Before compiling and running the game, ensure you have a C compiler (`gcc` or `clang`) and the **Raylib** library installed on your system.
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg)" width="22" height="22"/> 1. Linux Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="22" height="22"/> 1. Linux Setup
 
 ##### Ubuntu / Debian / Mint
 ```bash
@@ -58,7 +60,7 @@ sudo pacman -S gcc raylib --noconfirm
 
 ---
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg)" width="22" height="22"/> 2. macOS Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="22" height="22"/> 2. macOS Setup
 
 Make sure you have [Homebrew](https://brew.sh/) installed, then run:
 
@@ -72,7 +74,7 @@ brew install raylib
 
 ---
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg)" width="22" height="22"/> 3. Windows Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="22" height="22"/> 3. Windows Setup
 
 ##### Method A: Using MSYS2 / MinGW-w64 (Recommended)
 1. Install [MSYS2](https://www.msys2.org/).
@@ -95,7 +97,7 @@ brew install raylib
 Clone the project from the `Pong` branch:
 
 ```bash
-git clone -b Pong https://github.com/snaaaho/Game.git
+git clone -b Pong [https://github.com/snaaaho/Game.git](https://github.com/snaaaho/Game.git)
 cd Game
 ```
 
@@ -103,19 +105,19 @@ cd Game
 
 ### 2. Compile and Run
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg)" width="22" height="22"/> Linux
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="22" height="22"/> Linux
 ```bash
 gcc pong.c -o game -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ./game
 ```
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg)" width="22" height="22"/> Windows (MinGW / Command Prompt)
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="22" height="22"/> Windows (MinGW / Command Prompt)
 ```cmd
 gcc pong.c -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 game.exe
 ```
 
-#### <img src="[https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg](https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg)" width="22" height="22"/> macOS
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="22" height="22"/> macOS
 ```bash
 clang pong.c -o game -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 ./game
