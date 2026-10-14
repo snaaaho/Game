@@ -37,8 +37,8 @@ A fast-paced, lightweight 2D arcade game built from scratch in C using the **Ray
 
 Before compiling and running the game, ensure you have a C compiler (`gcc` or `clang`) and the **Raylib** library installed on your system.
 
-### 🐧 1. Linux Setup
-
+#### <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" /> 1. Linux Setup
+### 🐧
 #### Ubuntu / Debian / Mint
 ```bash
 sudo apt update
@@ -57,7 +57,7 @@ sudo pacman -S gcc raylib --noconfirm
 
 ---
 
-### 🍎 2. macOS Setup
+#### <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" /> 2. macOS Setup
 
 Make sure you have [Homebrew](https://brew.sh/) installed, then run:
 
@@ -71,7 +71,7 @@ brew install raylib
 
 ---
 
-### 🪟 3. Windows Setup
+#### <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> 3. Windows Setup
 
 #### Method A: Using MSYS2 / MinGW-w64 (Recommended)
 1. Install [MSYS2](https://www.msys2.org/).
@@ -104,19 +104,19 @@ cd Game
 
 > **Note:** If your C source file is named something other than `game1.c` (e.g., `main.c`), replace `game1.c` in the commands below with your actual filename.
 
-#### 🐧 Linux
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="22" height="22"/> Linux
 ```bash
 gcc game1.c -o game -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ./game
 ```
 
-#### 🪟 Windows (MinGW / Command Prompt)
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="22" height="22"/> Windows (MinGW / Command Prompt)
 ```cmd
 gcc game1.c -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 game.exe
 ```
 
-#### 🍎 macOS
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="22" height="22"/> macOS
 ```bash
 clang game1.c -o game -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 ./game
