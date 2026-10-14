@@ -39,10 +39,10 @@ int main(){
 
     while(!WindowShouldClose()){
         if(!gameover){
-            if(IsKeyDown(KEY_RIGHT)) CenterX += 5;
-            if(IsKeyDown(KEY_LEFT)) CenterX -= 5;
-            if(IsKeyDown(KEY_DOWN)) CenterY += 5;
-            if(IsKeyDown(KEY_UP)) CenterY -= 5;
+            if(IsKeyDown(KEY_RIGHT) || IsKeyDown(KEY_D)) CenterX += 5;
+            if(IsKeyDown(KEY_LEFT) || IsKeyDown(KEY_A)) CenterX -= 5;
+            if(IsKeyDown(KEY_DOWN) || IsKeyDown(KEY_S)) CenterY += 5;
+            if(IsKeyDown(KEY_UP) || IsKeyDown(KEY_W)) CenterY -= 5;
 
             if(CenterX - 30 < 0) CenterX = 30;
             if(CenterX + 30 > 2048) CenterX = 2048 - 30;
