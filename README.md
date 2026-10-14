@@ -10,7 +10,7 @@ Each game is maintained separately in its own dedicated branch.
 
 | Game | Branch Link | Description | Mode |
 | :--- | :--- | :--- | :--- |
-| 🎯 **1D Games** | [`1d-game`](https://github.com/snaaaho/Game/tree/1d-game) | Collection of classic text/logic games including Tic-Tac-Toe and Hangman. | Single / 2-Player |
+| 🎯 **1D Games** | [`1d-game`](https://github.com/snaaaho/Game/tree/1d-game) | Collection of classic text/logic games including Tic-Tac-Toe and Hangman. | Single Player |
 | 🪙 **2D Coin Collector** | [`2d-coin-collector`](https://github.com/snaaaho/Game/tree/2d-coin-collector) | Dodge moving hazards, collect coins, and survive before time runs out. | Single-player |
 | 🏓 **Pong** | [`Pong`](https://github.com/snaaaho/Game/tree/Pong) | Dynamic local 2-player classic Pong arcade game. | 2-Player (Local) |
 ---
