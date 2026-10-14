@@ -37,7 +37,7 @@ A fast-paced, lightweight 2D arcade game built from scratch in C using the **Ray
 
 Before compiling and running the game, ensure you have a C compiler (`gcc` or `clang`) and the **Raylib** library installed on your system.
 
-#### <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" /> 1. Linux Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="22" height="22"/> 1. Linux Setup
 ### 🐧
 #### Ubuntu / Debian / Mint
 ```bash
@@ -57,7 +57,7 @@ sudo pacman -S gcc raylib --noconfirm
 
 ---
 
-#### <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" /> 2. macOS Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="22" height="22"/> 2. macOS Setup
 
 Make sure you have [Homebrew](https://brew.sh/) installed, then run:
 
@@ -71,7 +71,7 @@ brew install raylib
 
 ---
 
-#### <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> 3. Windows Setup
+#### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="22" height="22"/> 3. Windows Setup
 
 #### Method A: Using MSYS2 / MinGW-w64 (Recommended)
 1. Install [MSYS2](https://www.msys2.org/).
